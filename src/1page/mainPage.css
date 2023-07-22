@@ -1,0 +1,82 @@
+.mainPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+.logo {
+  margin: 32px 0 32px 0;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+}
+
+.title h1 {
+  color: var(--label-color-dark-primary, #fff);
+  text-align: center;
+  text-shadow: 0px 0px 90px 0px rgba(255, 255, 255, 0.1);
+  font-family: SF Pro Display;
+  font-size: 180px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140px;
+  letter-spacing: 1.837px;
+  margin: 0;
+}
+.title p {
+  color: var(--label-color-dark-primary, #fff);
+  text-align: center;
+  font-family: SF Pro Display;
+  font-size: 20.5px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: 0.35px;
+  margin-top: 0;
+}
+
+.menu {
+  display: flex;
+  margin: 32px 0 32px 0;
+}
+
+.LightTheme {
+  width: 52px;
+  height: 52px;
+  background: var(--fill-color-dark-primary, rgba(118, 118, 128, 0.12));
+  border: 1px solid
+    var(--separator-color-light-with-transparence, rgba(60, 60, 67, 0.36));
+  border-radius: 26px;
+  backdrop-filter: blur(15px);
+}
+.Navigation {
+  width: 428px;
+  height: 52px;
+  margin-left: 12px;
+  margin-right: 12px;
+  border-radius: 24px;
+  border: 1px solid
+    var(--separator-color-light-with-transparence, rgba(60, 60, 67, 0.36));
+  background: var(--fill-color-dark-primary, rgba(118, 118, 128, 0.12));
+  backdrop-filter: blur(15px);
+}
+.Language {
+  width: 52px;
+  height: 52px;
+  background: var(--fill-color-dark-primary, rgba(118, 118, 128, 0.12));
+  border: 1px solid
+    var(--separator-color-light-with-transparence, rgba(60, 60, 67, 0.36));
+  border-radius: 26px;
+  backdrop-filter: blur(15px);
+}
+
+@font-face {
+  font-family: SF Pro Display;
+  src: url("../fonts/SF/SF-Font-for-Windows/SF-UI-Display-Medium.ttf");
+}
