@@ -1,12 +1,30 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import "./mainPage.css";
-import AlphaLogo from "../exported files/AlphaLogo.svg";
-import Iphone14Pro from "../exported files/iPhone14Pro.svg";
-import LightTheme from "../exported files/LightTheme.svg";
+import AlphaLogo from "../exportedFiles/AlphaLogo.svg";
+import Iphone14Pro from "../exportedFiles/iPhone14Pro.svg";
 import { gsap } from "gsap";
+import { TimelineLite } from "gsap/all";
+
+import { Navigation } from "../nav/Navigation";
 
 export const MainPage = () => {
+  const mainRef = useRef(null);
   useEffect(() => {
+    const timeline = new TimelineLite({ paused: true });
+    const logoAnimation = gsap.fromTo(
+      ".iphone",
+      { opacity: 0, y: 30 },
+      { opacity: 1, duration: 1, y: 0 }
+    );
+    timeline.add(logoAnimation);
+    const handleScroll = () => {
+      if (!timeline.isActive()) {
+        timeline.play();
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
     gsap.fromTo(
       ".logo",
       { opacity: 0, y: 30 },
@@ -14,7 +32,7 @@ export const MainPage = () => {
     );
     gsap.fromTo(
       ".menu",
-      { opacity: 0, y: 30 },
+      { opacity: 0, y: -30 },
       { opacity: 1, duration: 1.5, delay: 1, y: 0 }
     );
     gsap.fromTo(
@@ -24,7 +42,7 @@ export const MainPage = () => {
     );
     gsap.fromTo(
       ".title p",
-      { opacity: -1, fontSize: 0 },
+      { opacity: -1, fontSize: 15 },
       { opacity: 1, duration: 1, delay: 1.5, fontSize: 20.5 }
     );
     gsap.fromTo(
@@ -52,10 +70,14 @@ export const MainPage = () => {
       { height: 0, width: 0 },
       { width: 1072, height: 1072, duration: 2, delay: 0.5 }
     );
+
+    // return () => {
+    //   window.removeEventListener("scroll", handleScroll);
+    // };
   }, []);
 
   return (
-    <div className="mainPage">
+    <div className="mainPage" ref={mainRef}>
       <div className="logo">
         <img src={AlphaLogo} alt="alt" />
       </div>
@@ -66,22 +88,9 @@ export const MainPage = () => {
           Find, swap, and track assets on Telegram without <br />
           leaving the messenger
         </p>
-        {/* <img src={Iphone14Pro} alt="alt" /> */}
+        <img className="iphone" src={Iphone14Pro} alt="alt" />
       </div>
-      <div className="menu">
-        <div className="LightTheme">
-          <img src={LightTheme} alt="alt" />
-        </div>
-        <div className="Navigation">
-          <p>Main page</p>
-          <p>Features</p>
-          <p>Soon</p>
-          <p>Create Wallet</p>
-        </div>
-        <div className="Language">
-          <h1>EN</h1>
-        </div>
-      </div>
+      <Navigation />
       <div className="circle">
         <div className="firstCircle" />
         <div className="secondCircle" />

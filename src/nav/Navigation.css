@@ -1,0 +1,110 @@
+.menu {
+  z-index: 3;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  margin: 32px 0 32px 0;
+}
+
+.Navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 428px;
+  height: 52px;
+  margin-left: 12px;
+  margin-right: 12px;
+  border-radius: 24px;
+  border: 1px solid
+    var(--separator-color-light-with-transparence, rgba(60, 60, 67, 0.36));
+  background: var(--fill-color-dark-primary, rgba(118, 118, 128, 0.12));
+  backdrop-filter: blur(15px);
+}
+
+.link {
+  text-decoration: none;
+  cursor: pointer;
+  padding: 9px 16px;
+  color: var(--label-color-dark-secondary, #8a8a8a);
+  text-align: center;
+  font-family: SF Pro Display;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: -0.078px;
+}
+
+.whiteButton {
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 9px 16px;
+  border-radius: 1000px;
+  background: var(--system-bg-base-light-primary, #fff);
+  color: var(--label-color-light-primary, #252525);
+  text-align: center;
+  font-family: SF Pro Display;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: -0.078px;
+}
+
+.LightTheme {
+  cursor: pointer;
+  width: 52px;
+  height: 52px;
+  background: var(--fill-color-dark-primary, rgba(118, 118, 128, 0.12));
+  border: 1px solid
+    var(--separator-color-light-with-transparence, rgba(60, 60, 67, 0.36));
+  border-radius: 26px;
+  backdrop-filter: blur(15px);
+  /* cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  background: var(--fill-color-dark-primary, rgba(118, 118, 128, 0.12));
+  border: 1px solid
+    var(--separator-color-light-with-transparence, rgba(60, 60, 67, 0.36));
+  border-radius: 26px;
+  backdrop-filter: blur(15px); */
+}
+
+.Language {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  background: var(--fill-color-dark-primary, rgba(118, 118, 128, 0.12));
+  border: 1px solid
+    var(--separator-color-light-with-transparence, rgba(60, 60, 67, 0.36));
+  border-radius: 26px;
+  backdrop-filter: blur(15px);
+}
+.Language h1 {
+  color: var(--label-color-dark-secondary, #8a8a8a);
+  text-align: center;
+  font-family: SF Pro Display;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: -0.078px;
+}
+
+.active {
+  color: var(--label-color-dark-primary, #fff);
+  text-align: center;
+  font-family: SF Pro Display;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: -0.078px;
+}
