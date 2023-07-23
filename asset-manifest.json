@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/forkasatkinlab/static/css/main.2526bcfd.css",
+    "main.js": "/forkasatkinlab/static/js/main.d9d47862.js",
+    "static/js/787.a8340ea7.chunk.js": "/forkasatkinlab/static/js/787.a8340ea7.chunk.js",
+    "static/media/iPhone14Pro.svg": "/forkasatkinlab/static/media/iPhone14Pro.fa8b07f05552c8051af72022bd1eb0f0.svg",
+    "static/media/SF-UI-Display-Medium.ttf": "/forkasatkinlab/static/media/SF-UI-Display-Medium.8fa07d1d5e4839ed349d.ttf",
+    "static/media/LightTheme.svg": "/forkasatkinlab/static/media/LightTheme.498c6c59c2a92f37c8d926997ca22043.svg",
+    "static/media/AlphaLogo.svg": "/forkasatkinlab/static/media/AlphaLogo.8fa8d5c01d72840749897f64221c540e.svg",
+    "index.html": "/forkasatkinlab/index.html",
+    "main.2526bcfd.css.map": "/forkasatkinlab/static/css/main.2526bcfd.css.map",
+    "main.d9d47862.js.map": "/forkasatkinlab/static/js/main.d9d47862.js.map",
+    "787.a8340ea7.chunk.js.map": "/forkasatkinlab/static/js/787.a8340ea7.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2526bcfd.css",
+    "static/js/main.d9d47862.js"
+  ]
+}
